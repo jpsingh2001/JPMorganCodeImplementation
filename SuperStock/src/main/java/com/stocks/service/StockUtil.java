@@ -47,7 +47,7 @@ private HashMap<String, StockVO> stocks = null;
 		this.trades = trades;
 	}
 
-	
+	// Method implementation to record Trade
 	public boolean recordTrade(StockTradeVO trade) throws Exception{
 		boolean result = false;
 		try{
@@ -75,7 +75,7 @@ private HashMap<String, StockVO> stocks = null;
 		}
 		return stock;
 	}
-
+            // Method implementation to calculate Dividend Yield 
 	public double getDividendYieldByStock(StockVO stackVO) {
 		double dividendYieldStock = -1.0;
 		if(stackVO.getTickerPrice() > 0.0){
@@ -90,7 +90,7 @@ private HashMap<String, StockVO> stocks = null;
 
 
 	/**
-	 * 
+	 * Method to calculate P/E Ratio
 	 * @return
 	 */
 	public double getPeRatio(StockVO stackVO) {
@@ -103,6 +103,10 @@ private HashMap<String, StockVO> stocks = null;
 		return peRatio;
 	}
 	
+	/**
+	 * Method to calculate Dividend Yield
+	 * @return
+	 */
 	
 	public double calculateDividendYield(String stockSymbol) throws Exception{
 		double dividendYield = -1.0;
