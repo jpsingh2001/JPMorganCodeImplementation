@@ -17,8 +17,12 @@ public class StockServiceMain {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		StockServiceMain stpckServiceObj = StockServiceMain();
+		stpckServiceObj.storeStockTrade();
+		System.out.print(stpckServiceObj.calculateDividendYieldTest());
+		System.out.print(stpckServiceObj.calculatePERatioTest());
+		System.out.print(stpckServiceObj.calculateStockPriceTest());
+		System.out.print(stpckServiceObj.calculateGBCEAllShareIndexTest());
 	}
 	
 
